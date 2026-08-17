@@ -1923,7 +1923,7 @@ Game.Launch=function()
 		else Game.Loader.loaded=callback;
 		Game.Loader.Load(['filler.png']);
 	}
-	Game.ErrorFrame=function()
+	// Game.ErrorFrame=function()
 	{
 		l('offGameMessage').innerHTML=
 		'<div class="title">Oops. Wrong address!</div>'+
@@ -16862,7 +16862,7 @@ window.onload=function()
 				LoadLang('loc/'+lang+'.js?v='+Game.version,function(){
 					var launch=function(){
 						Game.Launch();
-						// if (top!=self) Game.ErrorFrame();
+						/if (top!=self) Game.ErrorFrame();
 						else
 						{
 							console.log('[=== '+choose([
